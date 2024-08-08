@@ -9,8 +9,8 @@ export default function PostOwnner({
   likeNum,
 }: OwnerProps) {
   return (
-    <div className="vstack gap-3">
-      <div className="d-flex align-items-center gap-3">
+    <div className="vstack gap-3 text-white">
+      <div className="d-flex align-items-center gap-3 ">
         <img
           src={userImagePath}
           width="48"
@@ -25,7 +25,7 @@ export default function PostOwnner({
 
       <div className="d-flex align-items-center gap-1">
         {likeNum > 0 && <img src="/like.svg" width={20}></img>}
-        {likeNum > 0 && <span className="text-muted">{likeNum} คน</span>}
+        {likeNum > 0 && <span style={{ color: "#B0B3B8" }}>{likeNum} คน</span>}
       </div>
       <hr className="m-0 border" />
     </div>

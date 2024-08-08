@@ -12,7 +12,7 @@ export default function Comment({
 }: CommentProps) {
   return (
     <div>
-      <div className="d-flex gap-2 my-2">
+      <div className="d-flex gap-2 my-2 c text-white">
         <img
           src={userImagePath}
           width="48"
@@ -22,14 +22,14 @@ export default function Comment({
         />
         <div
           className="rounded rounded-3 p-2"
-          style={{ backgroundColor: "#E5E7EB" }}
+          style={{ backgroundColor: "#3A3B3C"}}
         >
           <span className="fw-semibold">{username}</span>
           <br />
           <span>{commentText}</span>
           <div className="d-flex align-items-center gap-1">
             {likeNum > 0 && <img src="/like.svg" width={20}></img>}
-            {likeNum > 0 && <span className="text-muted">{likeNum} คน</span>}
+            {likeNum > 0 && <span style={{ color: "#B0B3B8" }}>{likeNum} คน</span>}
           </div>
         </div>
       </div>

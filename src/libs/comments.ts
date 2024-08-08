@@ -3,7 +3,7 @@ export const comments = [
     username: "Lisa",
     userImagePath: "/profileImages/lisa.jpg",
     commentText: "จริงค่า",
-    likeNum: 999,
+    likeNum: 9999,
     replies: [
       {
         username: "หมาน้อย",
@@ -15,7 +15,7 @@ export const comments = [
         username: "Cat Meme",
         userImagePath: "/profileImages/popcat.png",
         replyText: "ลิซ่าาาาาาา",
-        likeNum: 2,
+        likeNum: 22,
       },
     ],
   },

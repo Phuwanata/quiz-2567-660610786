@@ -15,22 +15,15 @@ export default function Home() {
 
   return (
     <div
-      style={{ minHeight: "100vh", backgroundColor: "ghostwhite" }}
+      style={{ minHeight: "100vh", backgroundColor: "#18191A" }}
       className="p-3"
     >
       {/* Entire App Container */}
       <div
-        style={{ maxWidth: "700px" }}
-        className="mx-auto p-3 rounded rounded-3 shadow-sm bg-white"
+        style={{ maxWidth: "700px" ,backgroundColor: "#242526"}}
+        className="mx-auto p-3 rounded rounded-3 shadow-sm s"
       >
-        {/* Post Owner Example*/}
-        <PostOwnner {...Post}/>
-
-        {/* Comment Example */}
-      
-        {/* Reply Example */}
-        
-        {/* map-loop render Comment component here */}
+        <PostOwnner {...Post}/>     
         {comments.map((c:CommentProps) => <Comment {...c} key={c.commentText}/>)}
       </div>
     </div>
